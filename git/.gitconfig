@@ -6,3 +6,11 @@
 [user]
 	email = vetalapo@gmail.com
 	name = Vitaly Dushkin
+
+[core]
+	autocrlf = false
+	fscache = true
+	symlinks = false
+
+[help]
+	autocorrect = 1
