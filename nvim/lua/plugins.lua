@@ -29,15 +29,27 @@ require("lazy").setup({
         "nvim-treesitter/nvim-treesitter",
         config = function()
             require("nvim-treesitter.configs").setup({
+                -- Add Languages to be installed for treesitter
                 ensure_installed = {
                     "c", "cpp", "c_sharp", "lua", "vim", "vimdoc", "query", "bash", "html", "css", "javascript", "json", "typescript", "python", "sql"
                 },
-                auto_install = true,
-                hightlight = {
-                    enable = true
-                }
+
+                -- Autoinstall Languages that are not installed
+                auto_install = false,
+
+                hightlight = { enable = true },
+                indent = { enable = true },
+                incremental_selection = {
+                    enable = true,
+                    keymaps = {
+                        init_selection = "<Leader>ss",
+                        node_incremental = "<Leader>si",
+                        scope_incremental = "<Leader>sc",
+                        node_decremental = "<Leader>sd"
+                    }
+                },
+                build = ":TSUpdate"
             })
         end
     }
 })
-

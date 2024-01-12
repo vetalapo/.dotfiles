@@ -2,7 +2,7 @@
 vim.opt.number = true
 
 -- Enable relative numbers up to current line and after
-vim.wo.relativenumber = true
+vim.opt.relativenumber = true
 
 -- Enable help or docs split below
 vim.opt.splitbelow = true
@@ -27,6 +27,9 @@ vim.opt.virtualedit = "block"
 -- Ignore case in search patterns
 vim.opt.ignorecase = true
 
--- Enamble 24-bit RGB color in termital
+-- Enable 24-bit RGB color in termital
 vim.opt.termguicolors = true
 
+-- Enable leader key (white space)
+vim.g.mapleader = " "
+vim.g.maplocalleader = " "
