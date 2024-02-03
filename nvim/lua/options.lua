@@ -17,6 +17,8 @@ vim.opt.wrap = false
 vim.opt.expandtab = true
 vim.opt.tabstop = 4
 vim.opt.shiftwidth = 4
+vim.opt.softtabstop = 4
+vim.opt.smartindent = true
 
 -- Sync clipboard between OS and Neovim.
 vim.opt.clipboard = "unnamedplus"
@@ -29,6 +31,14 @@ vim.opt.ignorecase = true
 
 -- Enable 24-bit RGB color in termital
 vim.opt.termguicolors = true
+
+-- Search
+vim.opt.incsearch = true
+vim.opt.ignorecase = true
+vim.opt.smartcase = true
+
+-- Minimal number of screen lines to keep above and below the cursor
+vim.opt.scrolloff = 10
 
 -- Enable leader key (white space)
 vim.g.mapleader = " "
